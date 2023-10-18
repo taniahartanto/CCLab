@@ -22,7 +22,7 @@ function setup() {
 function draw() {
     //draw random-colored circles on background
     if (keyIsPressed) {
-        if (key == "d") {
+        if (key == "s") {
             noStroke();
             //stroke(random(255), random(255), random(255));
             fill(color(random(255), random(255), random(255), 70));
@@ -194,5 +194,9 @@ function keyPressed() {
     //random background
     if (key == "r") {
         background(color(random(255), random(255), random(255)));
+    }
+
+    if (keyCode == ENTER) {
+        saveCanvas('MycosmicKaleidoscope', 'png');
     }
 }
