@@ -7,7 +7,7 @@ let x, y;
 let dia;
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth, windowHeight * 0.85);
     angleMode(DEGREES);
 
     colors[0] = color(255, 105, 180); // pink;
@@ -20,46 +20,6 @@ function setup() {
 }
 
 function draw() {
-    //draw random-colored circles on background
-    if (keyIsPressed) {
-        if (key == "s") {
-            noStroke();
-            //stroke(random(255), random(255), random(255));
-            fill(color(random(255), random(255), random(255), 70));
-            circle(mouseX, mouseY, 100);
-        }
-    }
-
-    //draw random-sized random-colored circles on background
-    if (keyIsPressed) {
-        if (key == "a") {
-            fill(random(255), random(255), random(255), 90);
-            circle(
-                mouseX + random(-1, 1) * 50,
-                mouseY + random(-1, 1) * 50,
-                random(5, 100)
-            );
-        }
-    }
-
-    //white-out (erase)
-    if (keyIsPressed) {
-        if (key == "w") {
-            noStroke();
-            fill(255);
-            circle(mouseX, mouseY, 100);
-        }
-    }
-
-    //black-out (erase)
-    if (keyIsPressed) {
-        if (key == "q") {
-            noStroke();
-            fill(0);
-            circle(mouseX, mouseY, 100);
-        }
-    }
-
     // COLOR PALETTES
     for (let i = 0; i < colors.length; i++) {
         let x = i * 30;
@@ -98,6 +58,47 @@ function draw() {
     }
 
     pop();
+    //draw random-colored circles on background
+    if (keyIsPressed) {
+        if (key == "s") {
+            noStroke();
+            //stroke(random(255), random(255), random(255));
+            fill(color(random(255), random(255), random(255), 70));
+            circle(mouseX, mouseY, 100);
+        }
+    }
+
+    //draw random-sized random-colored circles on background
+    if (keyIsPressed) {
+        if (key == "a") {
+            fill(random(255), random(255), random(255), 90);
+            circle(
+                mouseX + random(-1, 1) * 50,
+                mouseY + random(-1, 1) * 50,
+                random(5, 100)
+            );
+        }
+    }
+
+    //white-out (erase)
+    if (keyIsPressed) {
+        if (key == "w") {
+            noStroke();
+            fill(255);
+            circle(mouseX, mouseY, 50);
+        }
+    }
+
+    //black-out (erase)
+    if (keyIsPressed) {
+        if (key == "q") {
+            noStroke();
+            fill(0);
+            circle(mouseX, mouseY, 50);
+        }
+    }
+
+    //console.log(frameRate());
 }
 
 function mousePressed() {
@@ -197,6 +198,6 @@ function keyPressed() {
     }
 
     if (keyCode == ENTER) {
-        saveCanvas('MycosmicKaleidoscope', 'png');
+        saveCanvas("MycosmicKaleidoscope", "png");
     }
 }
