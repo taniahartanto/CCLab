@@ -7,7 +7,7 @@ let x, y;
 let dia;
 
 function setup() {
-    createCanvas(windowWidth, windowHeight * 0.85);
+    createCanvas(windowWidth, windowHeight * 0.70);
     angleMode(DEGREES);
 
     colors[0] = color(255, 105, 180); // pink;

@@ -5,5 +5,14 @@ body {
 }
 
 h1 {
-    color: black
+    color: black;
+    text-align: center;
+    font-family: monospace;
+}
+
+h6 {
+    color: black;
+    text-align: left;
+    font-family: monospace;
+    font-size: 14px;
 }
