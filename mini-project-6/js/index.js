@@ -9,7 +9,7 @@ function draw() {
     background(0);
 
     //gradient background
-    let purple = color(47, 4, 66);
+    let purple = color(147, 78, 167);
     let black = color(0);
     let blue = color(19, 16, 84);
 
@@ -45,7 +45,7 @@ function draw() {
     //land
     noStroke();
     fill(0);
-    rect(0, 550, windowWidth, windowHeight / 3);
+    rect(0, 550, windowWidth, windowHeight * 0.5);
 
     //house body
     rect(260, 450, 200, 100);
