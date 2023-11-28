@@ -1,0 +1,21 @@
+body, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+.header{background-color: aquamarine;
+height: 150px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.navBar{background-color: palevioletred;
+height: 50px;
+display: flex;
+justify-content:center;
+align-items: center;}
+
+
+.main-content{background-color: coral;}
+.footer{background-color: yellowgreen;}
