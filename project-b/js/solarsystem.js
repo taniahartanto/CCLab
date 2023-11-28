@@ -28,6 +28,7 @@ function preload() {
 
 let NUM_OF_PARTICLES = 300;
 let particles = [];
+var button;
 
 function setup() {
   noCursor();
@@ -36,6 +37,14 @@ function setup() {
   for (let i = 0; i < NUM_OF_PARTICLES; i++) {
     particles.push(new Particle(random(width), random(height)));
   }
+
+  button = createButton('Back');
+  button.position(windowWidth*0.05, windowHeight*0.9);
+  button.mousePressed(openBack);
+}
+
+function openBack(){
+  window.open("https://taniahartanto.github.io/CCLab/project-b/index.html")
 }
 
 function draw() {

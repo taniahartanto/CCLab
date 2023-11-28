@@ -102,7 +102,7 @@ function draw() {
   img.resize(100, 0);
 
   if (mouseIsPressed) {
-    window.open("solarsystem.html")
+    window.open("https://taniahartanto.github.io/CCLab/project-b/solarsystem.html")
   }
 }
 
