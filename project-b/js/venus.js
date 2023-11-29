@@ -1,14 +1,15 @@
 let img;
-let img10;
+let img5;
+let font;
 function preload() {
   font = loadFont("fonts/ComicNeue-Bold.ttf");
   img = loadImage("images/rocket.PNG");
-  img10 = loadImage("images/uranus.PNG");
+  img5 = loadImage("images/venus.PNG");
 }
 
 let particles = [];
 function setup() {
-  noCursor()
+  noCursor();
   createCanvas(windowWidth, windowHeight);
 }
 
@@ -32,13 +33,13 @@ function draw() {
   textSize(60);
   textFont(font);
   fill(255, 255, 255);
-  text("This is URANUS", windowWidth / 2, windowHeight * 0.25);
+  text("This is VENUS", windowWidth / 2, windowHeight * 0.25);
   
  //Planet
   push();
   imageMode(CENTER)
-  image(img10, windowWidth/2, windowHeight/2.5);
-  img10.resize(500,0)
+  image(img5, windowWidth/2.5, windowHeight/1.8);
+  img5.resize(700,0)
   pop();
 
   //Rocket Cursor

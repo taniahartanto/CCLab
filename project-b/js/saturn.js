@@ -2,9 +2,9 @@ let img;
 let img9;
 let font;
 function preload() {
-  font = loadFont("ComicNeue-Bold.ttf");
-  img = loadImage("rocket.PNG");
-  img9 = loadImage("saturn.PNG");
+  font = loadFont("fonts/ComicNeue-Bold.ttf");
+  img = loadImage("images/rocket.PNG");
+  img9 = loadImage("images/saturn.PNG");
 }
 
 let particles = [];
