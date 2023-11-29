@@ -32,12 +32,12 @@ function draw() {
   textSize(60);
   textFont(font);
   fill(255, 255, 255);
-  text("This is MARS", windowWidth / 2, windowHeight * 0.25);
+  text("This is MARS", windowWidth / 2, windowHeight * 0.15);
 
   //Planet
   push();
   imageMode(CENTER);
-  image(img6, windowWidth / 2.2, windowHeight / 2);
+  image(img6, windowWidth * 0.5, windowHeight*0.55);
   img6.resize(600, 0);
   pop();
 

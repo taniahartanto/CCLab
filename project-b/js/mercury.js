@@ -33,12 +33,12 @@ function draw() {
   textSize(60);
   textFont(font);
   fill(255, 255, 255);
-  text("This is the MERCURY", windowWidth / 2, windowHeight * 0.25);
+  text("This is MERCURY", windowWidth / 2, windowHeight * 0.15);
   
  //moon
   push();
   imageMode(CENTER)
-  image(img4, windowWidth/2, windowHeight/1.8);
+  image(img4, windowWidth/2, windowHeight*0.55);
   img4.resize(600,0)
   pop();
 

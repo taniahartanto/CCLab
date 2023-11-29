@@ -33,13 +33,13 @@ function draw() {
   textSize(60);
   textFont(font);
   fill(255, 255, 255);
-  text("This is NEPTUNE", windowWidth / 2, windowHeight * 0.2);
+  text("This is NEPTUNE", windowWidth / 2, windowHeight * 0.15);
   
  //Planet
   push();
   imageMode(CENTER)
-  image(img11, windowWidth/2, windowHeight*0.6);
-  img11.resize(400,0)
+  image(img11, windowWidth/2, windowHeight*0.55);
+  img11.resize(600,0)
   pop();
 
   //Rocket Cursor

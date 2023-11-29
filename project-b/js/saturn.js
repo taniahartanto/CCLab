@@ -33,12 +33,12 @@ function draw() {
   textSize(60);
   textFont(font);
   fill(255, 255, 255);
-  text("This is SATURN", windowWidth / 2, windowHeight * 0.25);
+  text("This is SATURN", windowWidth / 2, windowHeight * 0.15);
   
  //Planet
   push();
   imageMode(CENTER)
-  image(img9, windowWidth/2, windowHeight/1.7);
+  image(img9, windowWidth/2, windowHeight*0.55);
   img9.resize(700,0)
   pop();
 

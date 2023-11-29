@@ -33,13 +33,13 @@ function draw() {
   textSize(60);
   textFont(font);
   fill(255, 255, 255);
-  text("This is VENUS", windowWidth / 2, windowHeight * 0.25);
+  text("This is VENUS", windowWidth / 2, windowHeight * 0.15);
   
  //Planet
   push();
   imageMode(CENTER)
-  image(img5, windowWidth/2.5, windowHeight/1.8);
-  img5.resize(700,0)
+  image(img5, windowWidth/2, windowHeight*0.55);
+  img5.resize(600,0)
   pop();
 
   //Rocket Cursor

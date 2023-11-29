@@ -5,12 +5,14 @@ function preload() {
   font = loadFont("fonts/ComicNeue-Bold.ttf");
   img = loadImage("images/rocket.PNG");
   img2 = loadImage("images/moon.PNG");
+ 
 }
 
 let particles = [];
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  noCursor();
+  noCursor(); 
+  img2.resize(900,0);
 }
 
 function draw() {
@@ -33,12 +35,12 @@ function draw() {
   textSize(60);
   textFont(font);
   fill(255, 255, 255);
-  text("This is the MOON", windowWidth / 2, windowHeight * 0.25);
+  text("This is the MOON", windowWidth / 2, windowHeight * 0.15);
 
   //moon
   push();
   imageMode(CENTER);
-  image(img2, windowWidth / 2, windowHeight / 2);
+  image(img2, windowWidth * 0.47, windowHeight * 0.45);
   pop();
 
   //Rocket Cursor

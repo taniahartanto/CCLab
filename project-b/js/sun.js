@@ -11,7 +11,7 @@ let particles = [];
 function setup() {
   noCursor();
   createCanvas(windowWidth, windowHeight);
-  img3.resize(400, 0);
+  img3.resize(700, 0);
   img.resize(100, 0);
 }
 
@@ -35,12 +35,12 @@ function draw() {
   textSize(60);
   textFont(font);
   fill(255, 255, 255);
-  text("This is the SUN", windowWidth / 2, windowHeight * 0.25);
+  text("This is the SUN", windowWidth / 2, windowHeight * 0.15);
 
   //Sun
   push();
   imageMode(CENTER);
-  image(img3, windowWidth / 2, windowHeight * 0.6);
+  image(img3, windowWidth / 2, windowHeight * 0.55);
   pop();
 
   //Rocket Cursor

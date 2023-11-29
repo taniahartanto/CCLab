@@ -32,13 +32,13 @@ function draw() {
   textSize(60);
   textFont(font);
   fill(255, 255, 255);
-  text("This is URANUS", windowWidth / 2, windowHeight * 0.25);
+  text("This is URANUS", windowWidth / 2, windowHeight * 0.15);
   
  //Planet
   push();
   imageMode(CENTER)
-  image(img10, windowWidth/2, windowHeight/2.5);
-  img10.resize(500,0)
+  image(img10, windowWidth/2, windowHeight*0.55);
+  img10.resize(600,0)
   pop();
 
   //Rocket Cursor
