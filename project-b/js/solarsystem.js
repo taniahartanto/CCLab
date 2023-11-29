@@ -28,8 +28,13 @@ function preload() {
 
 let NUM_OF_PARTICLES = 300;
 let particles = [];
-
+var button;
 function setup() {
+
+  button = createButton('Back')
+  button.position (windowWidth*0.01, windowHeight*0.7)
+  button.mousePressed(openBack)
+
   noCursor();
   createCanvas(windowWidth, windowHeight);
 
@@ -133,8 +138,8 @@ function draw() {
     if (
       mouseX >= 670 &&
       mouseX <= 670 + img5.width &&
-      mouseY >= windowHeight * 0.35 &&
-      mouseY <= windowHeight * 0.35 + img5.height
+      mouseY >= windowHeight * 0.55 &&
+      mouseY <= windowHeight * 0.55 + img5.height
     ) {
       window.open("https://taniahartanto.github.io/CCLab/project-b/mars.html");
     }
@@ -232,4 +237,8 @@ function star(x, y, radius1, radius2, npoints) {
     vertex(sx, sy);
   }
   endShape(CLOSE);
+}
+
+function openBack(){
+  window.open("https://taniahartanto.github.io/CCLab/project-b/index.html")
 }
