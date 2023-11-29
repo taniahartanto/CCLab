@@ -66,7 +66,7 @@ function draw() {
       mouseY >= windowHeight * 0.1 &&
       mouseY <= windowHeight * 0.1 + img1.height
     ) {
-      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+      window.open("https://taniahartanto.github.io/CCLab/project-b/sun.html");
     }
   }
 
@@ -80,7 +80,7 @@ function draw() {
       mouseY >= windowHeight * 0.6 &&
       mouseY <= windowHeight * 0.6 + img2.height
     ) {
-      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+      window.open("https://taniahartanto.github.io/CCLab/project-b/mercury.html");
     }
   }
 
@@ -94,7 +94,7 @@ function draw() {
       mouseY >= windowHeight * 0.3 &&
       mouseY <= windowHeight * 0.3 + img3.height
     ) {
-      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+      window.open("https://taniahartanto.github.io/CCLab/project-b/venus.html");
     }
   }
 
@@ -108,7 +108,7 @@ function draw() {
       mouseY >= windowHeight * 0.4 &&
       mouseY <= windowHeight * 0.4 + img4.height
     ) {
-      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+      window.open("https://taniahartanto.github.io/CCLab/project-b/earth.html");
     }
   }
 
@@ -122,7 +122,7 @@ function draw() {
       mouseY >= windowHeight * 0.35 &&
       mouseY <= windowHeight * 0.35 + img10.height
     ) {
-      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+      window.open("https://taniahartanto.github.io/CCLab/project-b/moon.html");
     }
   }
 
@@ -136,7 +136,7 @@ function draw() {
       mouseY >= windowHeight * 0.35 &&
       mouseY <= windowHeight * 0.35 + img5.height
     ) {
-      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+      window.open("https://taniahartanto.github.io/CCLab/project-b/mars.html");
     }
   }
 
@@ -150,7 +150,7 @@ function draw() {
       mouseY >= windowHeight * 0.2 &&
       mouseY <= windowHeight * 0.2 + img6.height
     ) {
-      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+      window.open("https://taniahartanto.github.io/CCLab/project-b/jupiter.html");
     }
   }
 
@@ -164,7 +164,7 @@ function draw() {
       mouseY >= windowHeight * 0.6 &&
       mouseY <= windowHeight * 0.6 + img7.height
     ) {
-      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+      window.open("https://taniahartanto.github.io/CCLab/project-b/saturn.html");
     }
   }
 
@@ -178,7 +178,7 @@ function draw() {
       mouseY >= windowHeight * 0.2 &&
       mouseY <= windowHeight * 0.2 + img8.height
     ) {
-      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+      window.open("https://taniahartanto.github.io/CCLab/project-b/uranus.html");
     }
   }
 
@@ -192,7 +192,7 @@ function draw() {
       mouseY >= windowHeight * 0.45 &&
       mouseY <= windowHeight * 0.45 + img9.height
     ) {
-      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+      window.open("https://taniahartanto.github.io/CCLab/project-b/neptune.html");
     }
   }
 
