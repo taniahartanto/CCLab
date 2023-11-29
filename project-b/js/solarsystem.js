@@ -32,7 +32,7 @@ var button;
 function setup() {
 
   button = createButton('Back')
-  button.position (windowWidth*0.01, windowHeight*0.7)
+  button.position (windowWidth*0.4, windowHeight*0.7)
   button.mousePressed(openBack)
 
   noCursor();
@@ -237,8 +237,4 @@ function star(x, y, radius1, radius2, npoints) {
     vertex(sx, sy);
   }
   endShape(CLOSE);
-}
-
-function openBack(){
-  window.open("https://taniahartanto.github.io/CCLab/project-b/index.html")
 }
