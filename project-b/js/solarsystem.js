@@ -28,7 +28,6 @@ function preload() {
 
 let NUM_OF_PARTICLES = 300;
 let particles = [];
-var button;
 
 function setup() {
   noCursor();
@@ -37,14 +36,6 @@ function setup() {
   for (let i = 0; i < NUM_OF_PARTICLES; i++) {
     particles.push(new Particle(random(width), random(height)));
   }
-
-  button = createButton('Back');
-  button.position(windowWidth*0.05, windowHeight*0.9);
-  button.mousePressed(openBack);
-}
-
-function openBack(){
-  window.open("https://taniahartanto.github.io/CCLab/project-b/index.html")
 }
 
 function draw() {
@@ -68,42 +59,142 @@ function draw() {
 
   //Sun
   image(img1, -320, windowHeight * 0.1);
+  if (mouseIsPressed) {
+    if (
+      mouseX >= -320 &&
+      mouseX <= -320 + img1.width &&
+      mouseY >= windowHeight * 0.1 &&
+      mouseY <= windowHeight * 0.1 + img1.height
+    ) {
+      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+    }
+  }
 
   //Mercury
   image(img2, 230, windowHeight * 0.6);
   img2.resize(80, 0);
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 230 &&
+      mouseX <= 230 + img2.width &&
+      mouseY >= windowHeight * 0.6 &&
+      mouseY <= windowHeight * 0.6 + img2.height
+    ) {
+      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+    }
+  }
 
   //Venus
   image(img3, 360, windowHeight * 0.3);
   img3.resize(140, 0);
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 360 &&
+      mouseX <= 360 + img3.width &&
+      mouseY >= windowHeight * 0.3 &&
+      mouseY <= windowHeight * 0.3 + img3.height
+    ) {
+      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+    }
+  }
 
   //Earth
   image(img4, 500, windowHeight * 0.4);
   img4.resize(160, 0);
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 500 &&
+      mouseX <= 500 + img4.width &&
+      mouseY >= windowHeight * 0.4 &&
+      mouseY <= windowHeight * 0.4 + img4.height
+    ) {
+      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+    }
+  }
 
   //Moon
   image(img10, 600, windowHeight * 0.35);
   img10.resize(80, 0);
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 600 &&
+      mouseX <= 600 + img10.width &&
+      mouseY >= windowHeight * 0.35 &&
+      mouseY <= windowHeight * 0.35 + img10.height
+    ) {
+      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+    }
+  }
 
   //Mars
   image(img5, 670, windowHeight * 0.55);
   img5.resize(120, 0);
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 670 &&
+      mouseX <= 670 + img5.width &&
+      mouseY >= windowHeight * 0.35 &&
+      mouseY <= windowHeight * 0.35 + img5.height
+    ) {
+      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+    }
+  }
 
   //Jupiter
   image(img6, 740, windowHeight * 0.2);
   img6.resize(280, 0);
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 740 &&
+      mouseX <= 740 + img6.width &&
+      mouseY >= windowHeight * 0.2 &&
+      mouseY <= windowHeight * 0.2 + img6.height
+    ) {
+      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+    }
+  }
 
   //Saturn
   image(img7, 870, windowHeight * 0.6);
   img7.resize(290, 0);
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 870 &&
+      mouseX <= 870 + img7.width &&
+      mouseY >= windowHeight * 0.6 &&
+      mouseY <= windowHeight * 0.6 + img7.height
+    ) {
+      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+    }
+  }
 
   //Uranus
   image(img8, 1080, windowHeight * 0.2);
   img8.resize(200, 0);
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 1080 &&
+      mouseX <= 1080 + img8.width &&
+      mouseY >= windowHeight * 0.2 &&
+      mouseY <= windowHeight * 0.2 + img8.height
+    ) {
+      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+    }
+  }
 
   //Neptune
   image(img9, 1230, windowHeight * 0.45);
   img9.resize(200, 0);
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 1230 &&
+      mouseX <= 1230 + im9.width &&
+      mouseY >= windowHeight * 0.45 &&
+      mouseY <= windowHeight * 0.45 + img9.height
+    ) {
+      window.open("https://taniahartanto.github.io/CCLab/project-b/index.html");
+    }
+  }
 
   //Rocket Cursor
   image(img, mouseX - 30, mouseY - 30);
