@@ -1,15 +1,20 @@
 let img;
+let img11;
 let font;
 function preload() {
   font = loadFont("fonts/ComicNeue-Bold.ttf");
   img = loadImage("images/rocket.PNG");
-  img6 = loadImage("images/mars.PNG");
+  img11 = loadImage("images/neptune.PNG");
 }
 
 let particles = [];
 function setup() {
-  noCursor();
+  noCursor()
   createCanvas(windowWidth, windowHeight);
+  imgX = windowWidth * 0.25;
+  imgY = windowHeight * 0.47;
+  imgYOffset = 0;
+  imgYSpeed = 2;
 }
 
 function draw() {
@@ -28,19 +33,16 @@ function draw() {
     p.display();
   }
   
-  textAlign(CENTER);
-  textSize(60);
-  textFont(font);
-  fill(255, 255, 255);
-  text("This is MARS", windowWidth / 2, windowHeight * 0.15);
-  textSize (25);
-  text("Press and hold your mouse to generate stars", windowWidth / 2, windowHeight * 0.19);
-
-  //Planet
+ //Planet
+  imgYOffset += imgYSpeed;
+  if (imgYOffset > 15 || imgYOffset < -15) {
+    imgYSpeed *= -1;
+  }
   push();
+  translate(imgX, imgY + imgYOffset);
   imageMode(CENTER);
-  image(img6, windowWidth * 0.5, windowHeight*0.55);
-  img6.resize(600, 0);
+  image(img11, 0, 0);
+  img11.resize(600,0)
   pop();
 
   //Rocket Cursor
@@ -59,14 +61,6 @@ class Particle {
   move() {
     this.x += this.xSpeed;
     this.y += this.ySpeed;
-  }
-  checkEdges() {
-    if (this.x < 0 || this.x > width) {
-      this.isDone = true;
-    }
-    if (this.y < 0 || this.y > height) {
-      this.isDone = true;
-    }
   }
   display() {
     push();
