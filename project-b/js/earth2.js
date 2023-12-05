@@ -43,9 +43,28 @@ function draw() {
  translate(imgX, imgY + imgYOffset);
  imageMode(CENTER);
  image(img7, 0, 0);
+ pop();
 
-  pop();
+ textAlign(CENTER);
+  textSize(60);
+  textFont(font);
+  fill(255, 255, 255);
+  text("Earth", windowWidth*0.70, windowHeight * 0.2);
+  textSize (25);
+  text("Earth is our home planet!", windowWidth * 0.7, windowHeight * 0.27);
+  text( "It's the only planet in our solar system known to have life.", windowWidth * 0.7, windowHeight * 0.31)
+  text( "We have beautiful forests, towering mountains,", windowWidth * 0.7, windowHeight * 0.35)
+  text( "and diverse ecosystems all around.", windowWidth * 0.7, windowHeight * 0.39)
 
+  text( "Earth's atmosphere is made up of different gases,", windowWidth * 0.7, windowHeight * 0.46)  
+  text( "with the most abundant being nitrogen and oxygen.", windowWidth * 0.7, windowHeight * 0.50)
+  text ("Oxygen is crucial for us and many other organisms", windowWidth * 0.7, windowHeight*0.54)
+  text ("to breathe and survive.", windowWidth * 0.7, windowHeight*0.58)
+
+  text( "Earth has one moon, simply called 'the Moon.'", windowWidth * 0.7, windowHeight * 0.65)  
+  text( "It's Earth's only natural satellite and orbits around our planet.", windowWidth * 0.7, windowHeight * 0.69)
+  text ("The Moon's gravity affects the tides in our oceans.", windowWidth * 0.7, windowHeight*0.73)
+ 
   //Rocket Cursor
   image(img, mouseX - 30, mouseY - 30);
   img.resize(100, 0);

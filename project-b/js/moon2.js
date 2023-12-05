@@ -46,6 +46,24 @@ function draw() {
   image(img2, 0, 0);
   pop();
 
+  textAlign(CENTER);
+  textSize(60);
+  textFont(font);
+  fill(255, 255, 255);
+  text("The Moon", windowWidth*0.70, windowHeight * 0.25);
+  textSize (25);
+  text("The Moon is the second brightest object in the sky,", windowWidth * 0.7, windowHeight * 0.32);
+  text( "after the Sun.", windowWidth * 0.7, windowHeight * 0.36)
+  text( "Its bright appearance is because it reflects sunlight.", windowWidth * 0.7, windowHeight * 0.4)
+
+  text( "The Moon is about one-fourth the size of Earth.", windowWidth * 0.7, windowHeight * 0.47)  
+  text( "If Earth were the size of a basketball,", windowWidth * 0.7, windowHeight * 0.51)
+  text ("he Moon would be about the size of a baseball.", windowWidth * 0.7, windowHeight*0.55)
+
+  text( "Unlike Earth, the Moon doesn't have an atmosphere.", windowWidth * 0.7, windowHeight * 0.62)  
+  text( "This means there's no air or weather on the Moon. ", windowWidth * 0.7, windowHeight * 0.66)
+  text ("It's a very different environment!", windowWidth * 0.7, windowHeight*0.70)
+
   //Rocket Cursor
   image(img, mouseX - 30, mouseY - 30);
   img.resize(100, 0);

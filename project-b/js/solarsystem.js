@@ -10,6 +10,7 @@ let img8;
 let img9;
 let img10;
 let font;
+let snd;
 
 function preload() {
   font = loadFont("fonts/ComicNeue-Bold.ttf");
@@ -25,6 +26,7 @@ function preload() {
   img8 = loadImage("images/uranus.PNG");
   img9 = loadImage("images/neptune.PNG");
   img10 = loadImage("images/moon.PNG");
+  snd = loadSound("sound//mouse-click-153941.mp3")
 }
 
 let NUM_OF_PARTICLES = 300;
@@ -83,7 +85,7 @@ function draw() {
       mouseY >= windowHeight * 0.1 &&
       mouseY <= windowHeight * 0.1 + img1.height
     ) {
-      window.open("sun.html", "_self");
+      window.open("sun.html", "_self")
     }
   }
 
@@ -103,7 +105,7 @@ function draw() {
 
   //Venus
   image(img3, 360, windowHeight * 0.3);
-  
+
   if (mouseIsPressed) {
     if (
       mouseX >= 360 &&
@@ -146,7 +148,7 @@ function draw() {
 
   //Mars
   image(img5, 670, windowHeight * 0.55);
-  
+
   if (mouseIsPressed) {
     if (
       mouseX >= 670 &&
@@ -160,7 +162,7 @@ function draw() {
 
   //Jupiter
   image(img6, 740, windowHeight * 0.2);
- 
+
   if (mouseIsPressed) {
     if (
       mouseX >= 740 &&
@@ -174,7 +176,7 @@ function draw() {
 
   //Saturn
   image(img7, 870, windowHeight * 0.6);
-  
+
   if (mouseIsPressed) {
     if (
       mouseX >= 870 &&
@@ -202,7 +204,7 @@ function draw() {
 
   //Neptune
   image(img9, 1230, windowHeight * 0.45);
-  
+
   if (mouseIsPressed) {
     if (
       mouseX >= 1230 &&
@@ -250,4 +252,119 @@ function star(x, y, radius1, radius2, npoints) {
     vertex(sx, sy);
   }
   endShape(CLOSE);
+}
+
+function mousePressed() {
+
+  if (mouseIsPressed) {
+    if (
+      mouseX >= -320 &&
+      mouseX <= -320 + img1.width &&
+      mouseY >= windowHeight * 0.1 &&
+      mouseY <= windowHeight * 0.1 + img1.height
+    ) {
+      snd.play();
+    }
+  }
+
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 230 &&
+      mouseX <= 230 + img2.width &&
+      mouseY >= windowHeight * 0.6 &&
+      mouseY <= windowHeight * 0.6 + img2.height
+    ) {
+      snd.play();
+    }
+  }
+
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 360 &&
+      mouseX <= 360 + img3.width &&
+      mouseY >= windowHeight * 0.3 &&
+      mouseY <= windowHeight * 0.3 + img3.height
+    ) {
+      snd.play();
+    }
+  }
+
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 500 &&
+      mouseX <= 500 + img4.width &&
+      mouseY >= windowHeight * 0.4 &&
+      mouseY <= windowHeight * 0.4 + img4.height
+    ) {
+      snd.play();
+    }
+  }
+
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 600 &&
+      mouseX <= 600 + img10.width &&
+      mouseY >= windowHeight * 0.35 &&
+      mouseY <= windowHeight * 0.35 + img10.height
+    ) {
+      snd.play();
+    }
+  }
+
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 670 &&
+      mouseX <= 670 + img5.width &&
+      mouseY >= windowHeight * 0.55 &&
+      mouseY <= windowHeight * 0.55 + img5.height
+    ) {
+      snd.play();
+    }
+  }
+
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 740 &&
+      mouseX <= 740 + img6.width &&
+      mouseY >= windowHeight * 0.2 &&
+      mouseY <= windowHeight * 0.2 + img6.height
+    ) {
+      snd.play();
+    }
+  }
+
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 870 &&
+      mouseX <= 870 + img7.width &&
+      mouseY >= windowHeight * 0.6 &&
+      mouseY <= windowHeight * 0.6 + img7.height
+    ) {
+      snd.play();
+    }
+  }
+
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 1080 &&
+      mouseX <= 1080 + img8.width &&
+      mouseY >= windowHeight * 0.2 &&
+      mouseY <= windowHeight * 0.2 + img8.height
+    ) {
+      snd.play();
+    }
+  }
+
+  if (mouseIsPressed) {
+    if (
+      mouseX >= 1230 &&
+      mouseX <= 1230 + img9.width &&
+      mouseY >= windowHeight * 0.45 &&
+      mouseY <= windowHeight * 0.45 + img9.height
+    ) {
+      snd.play();
+    }
+  }
+
+
 }

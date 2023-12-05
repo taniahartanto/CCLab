@@ -44,6 +44,26 @@ function draw() {
   image(img10, 0, 0);
   pop();
 
+  textAlign(CENTER);
+  textSize(60);
+  textFont(font);
+  fill(255, 255, 255);
+  text("Uranus", windowWidth*0.70, windowHeight * 0.25);
+  textSize (25);
+  text("Uranus appears pale blue in color.", windowWidth * 0.7, windowHeight * 0.32);
+  text( "This is due to the presence of methane gas in its atmosphere,", windowWidth * 0.7, windowHeight * 0.36)
+  text( "which absorbs red light and reflects blue light.", windowWidth * 0.7, windowHeight * 0.4)
+
+  text( "Uranus is classified as a gas giant, similar to Jupiter", windowWidth * 0.7, windowHeight * 0.47)  
+  text( "and Saturn. It's mostly composed of hydrogen and helium,", windowWidth * 0.7, windowHeight * 0.51)
+  text ("with small amounts of methane and other gases.", windowWidth * 0.7, windowHeight*0.55)
+
+  text( "Uranus has a system of thin, dark rings around it.", windowWidth * 0.7, windowHeight * 0.62)  
+  text( "They are much less prominent than Saturn's rings", windowWidth * 0.7, windowHeight * 0.66)
+  text ("and were discovered when the planet passed in front of a star, ", windowWidth * 0.7, windowHeight*0.70)
+  text ("causing the star's light to temporarily dim.", windowWidth * 0.7, windowHeight * 0.74)
+
+
   //Rocket Cursor
   image(img, mouseX - 30, mouseY - 30);
   img.resize(100, 0);

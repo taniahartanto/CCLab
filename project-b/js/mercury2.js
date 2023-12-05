@@ -46,6 +46,27 @@ function draw() {
   image(img4, 0, 0);
   pop();
 
+  textAlign(CENTER);
+  textSize(60);
+  textFont(font);
+  fill(255, 255, 255);
+  text("Mercury", windowWidth*0.70, windowHeight * 0.25);
+  textSize (25);
+  text("Mercury is one of the smallest planets in our solar system.", windowWidth * 0.7, windowHeight * 0.32);
+  text( "It's even smaller than some moons,", windowWidth * 0.7, windowHeight * 0.36)
+  text( "like Jupiter's moon Ganymede and Saturn's moon Titan.", windowWidth * 0.7, windowHeight * 0.4)
+
+  text( "Mercury has a rocky surface covered in craters. ", windowWidth * 0.7, windowHeight * 0.47)  
+  text( "It's a bit like Earth's Moon.", windowWidth * 0.7, windowHeight * 0.51)
+  text ("These craters were created by rocks and debris", windowWidth * 0.7, windowHeight*0.55)
+  text ("crashing into the planet's surface a long time ago.", windowWidth * 0.7, windowHeight * 0.59)
+
+  text( "Mercury has extreme temperatures. ", windowWidth * 0.7, windowHeight * 0.66)  
+  text( "During the day, it gets super hot,", windowWidth * 0.7, windowHeight * 0.70)
+  text ("like standing next to a blazing bonfire.", windowWidth * 0.7, windowHeight*0.74)
+  text( "But at night, it gets extremely cold,", windowWidth * 0.7, windowHeight * 0.78)
+  text ("like being in a freezer.", windowWidth * 0.7, windowHeight*0.82)
+
   //Rocket Cursor
   image(img, mouseX - 30, mouseY - 30);
   img.resize(100, 0);

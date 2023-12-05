@@ -45,6 +45,24 @@ function draw() {
  image(img5, 0, 0);
   pop();
 
+  textAlign(CENTER);
+  textSize(60);
+  textFont(font);
+  fill(255, 255, 255);
+  text("Venus", windowWidth*0.70, windowHeight * 0.25);
+  textSize (25);
+  text("Venus is the brightest planet in our night sky.", windowWidth * 0.7, windowHeight * 0.32);
+  text( "It shines so brightly", windowWidth * 0.7, windowHeight * 0.36)
+  text( "that sometimes it's even mistaken for a star!", windowWidth * 0.7, windowHeight * 0.4)
+
+  text( "Venus is believed to have active volcanoes on its surface.", windowWidth * 0.7, windowHeight * 0.47)  
+  text( "These volcanoes may have erupted in the past,", windowWidth * 0.7, windowHeight * 0.51)
+  text ("releasing lava and gases into the atmosphere.", windowWidth * 0.7, windowHeight*0.55)
+
+  text( "Venus is incredibly hot!", windowWidth * 0.7, windowHeight * 0.62)  
+  text( "It's the hottest planet in our solar system,", windowWidth * 0.7, windowHeight * 0.66)
+  text ("with surface temperatures that can melt lead.", windowWidth * 0.7, windowHeight*0.70)
+
   //Rocket Cursor
   image(img, mouseX - 30, mouseY - 30);
   img.resize(100, 0);

@@ -44,6 +44,25 @@ function draw() {
   image(img6, 0, 0);
   pop();
 
+  textAlign(CENTER);
+  textSize(60);
+  textFont(font);
+  fill(255, 255, 255);
+  text("Mars", windowWidth*0.70, windowHeight * 0.25);
+  textSize (25);
+  text("Mars is the fourth planet in our solar system,", windowWidth * 0.7, windowHeight * 0.32);
+  text( "located between Earth and Jupiter.", windowWidth * 0.7, windowHeight * 0.36)
+  text( "It's about half the size of Earth.", windowWidth * 0.7, windowHeight * 0.4)
+
+  text( "Mars is home to the largest volcano", windowWidth * 0.7, windowHeight * 0.47)  
+  text( "in our solar system, called Olympus Mons.", windowWidth * 0.7, windowHeight * 0.51)
+  text ("It is three times the height of Mount Everest!", windowWidth * 0.7, windowHeight*0.55)
+
+  text( "Scientists are working on technologies and missions", windowWidth * 0.7, windowHeight * 0.62)  
+  text( "to send humans to Mars to learn more about the planet", windowWidth * 0.7, windowHeight * 0.66)
+  text ("and potentially establish a human presence!", windowWidth * 0.7, windowHeight*0.70)
+
+
   //Rocket Cursor
   image(img, mouseX - 30, mouseY - 30);
   img.resize(100, 0);

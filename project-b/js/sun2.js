@@ -50,6 +50,25 @@ function draw() {
   image(img3, 0, 0);
   pop();
 
+  textAlign(CENTER);
+  textSize(60);
+  textFont(font);
+  fill(255, 255, 255);
+  text("The Sun", windowWidth*0.70, windowHeight * 0.25);
+  textSize (25);
+  text("The Sun is really big!", windowWidth * 0.7, windowHeight * 0.32);
+  text( "It's so big that you could fit more than a million Earths inside it.", windowWidth * 0.7, windowHeight * 0.36)
+  text( "It's like a giant ball of hot gas.", windowWidth * 0.7, windowHeight * 0.4)
+
+  text( "The Sun is really bright!", windowWidth * 0.7, windowHeight * 0.47)  
+  text( "It's so bright that if you look directly at it", windowWidth * 0.7, windowHeight * 0.51)
+  text ("it can hurt your eyes.", windowWidth * 0.7, windowHeight*0.55)
+
+  text( "The Sun gives us light and heat.", windowWidth * 0.7, windowHeight * 0.62)  
+  text( "It's like a giant, glowing light bulb in the sky.", windowWidth * 0.7, windowHeight * 0.66)
+  text ("Plants use the Sun's energy to grow", windowWidth * 0.7, windowHeight*0.70)
+  text ("through a process called photosynthesis.", windowWidth * 0.7, windowHeight * 0.74)
+
   //Rocket Cursor
   push();
   image(img, mouseX - 30, mouseY - 30);

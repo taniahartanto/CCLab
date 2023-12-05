@@ -45,6 +45,25 @@ function draw() {
   image(img9, 0, 0);
   pop();
 
+  textAlign(CENTER);
+  textSize(60);
+  textFont(font);
+  fill(255, 255, 255);
+  text("Saturn", windowWidth*0.70, windowHeight * 0.25);
+  textSize (25);
+  text("Saturn is famous for its spectacular rings.", windowWidth * 0.7, windowHeight * 0.32);
+  text( "These rings are made up of billions of tiny ice particles", windowWidth * 0.7, windowHeight * 0.36)
+  text( "ranging in size from grains of sand to giant boulders.", windowWidth * 0.7, windowHeight * 0.4)
+
+  text( "Saturn's north pole has a unique and mysterious storm", windowWidth * 0.7, windowHeight * 0.47)  
+  text( "known as the 'hexagon.' It's a massive, rotating hexagonal", windowWidth * 0.7, windowHeight * 0.51)
+  text ("cloud pattern that has fascinated scientists for years.", windowWidth * 0.7, windowHeight*0.55)
+
+  text( "Saturn has at least 82 known moons,", windowWidth * 0.7, windowHeight * 0.62)  
+  text( "and scientists are still discovering more!", windowWidth * 0.7, windowHeight * 0.66)
+  text ("One of its moons, called Titan,", windowWidth * 0.7, windowHeight*0.70)
+  text ("is even larger than the planet Mercury.", windowWidth * 0.7, windowHeight*0.74)
+
   //Rocket Cursor
   image(img, mouseX - 30, mouseY - 30);
   img.resize(100, 0);

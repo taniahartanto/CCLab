@@ -45,6 +45,24 @@ function draw() {
   image(img8, 0, 0);
   pop();
 
+  textAlign(CENTER);
+  textSize(60);
+  textFont(font);
+  fill(255, 255, 255);
+  text("Jupiter", windowWidth*0.70, windowHeight * 0.25);
+  textSize (25);
+  text("Jupiter is the largest planet in our solar system.", windowWidth * 0.7, windowHeight * 0.32);
+  text( "In fact, it's so big that", windowWidth * 0.7, windowHeight * 0.36)
+  text( "all the other planets could fit inside it!", windowWidth * 0.7, windowHeight * 0.4)
+
+  text( "Jupiter has distinct bands of clouds that encircle the planet.", windowWidth * 0.7, windowHeight * 0.47)  
+  text( "These bands are made up of different types of clouds,", windowWidth * 0.7, windowHeight * 0.51)
+  text ("and they create Jupiter's iconic stripes.", windowWidth * 0.7, windowHeight*0.55)
+
+  text( "Jupiter has a gigantic storm known as the Great Red Spot.", windowWidth * 0.7, windowHeight * 0.62)  
+  text( "It's an enormous swirling storm that has been going on for centuries.", windowWidth * 0.7, windowHeight * 0.66)
+  text ("It's so large that three Earths could fit inside it!", windowWidth * 0.7, windowHeight*0.70)
+
   //Rocket Cursor
   image(img, mouseX - 30, mouseY - 30);
   img.resize(100, 0);

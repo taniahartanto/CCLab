@@ -45,6 +45,26 @@ function draw() {
   img11.resize(600,0)
   pop();
 
+  textAlign(CENTER);
+  textSize(60);
+  textFont(font);
+  fill(255, 255, 255);
+  text("Neptune", windowWidth*0.70, windowHeight * 0.25);
+  textSize (25);
+  text("Neptune is the eighth and farthest planet from the Sun", windowWidth * 0.7, windowHeight * 0.32);
+  text( "in our solar system. It's located after Uranus and", windowWidth * 0.7, windowHeight * 0.36)
+  text( "is about 30 times farther from the Sun than Earth.", windowWidth * 0.7, windowHeight * 0.4)
+
+  text( "Neptune is the coldest and windiest planet in the solar system.", windowWidth * 0.7, windowHeight * 0.47)  
+  text( "In addition, they have the most powerful storm", windowWidth * 0.7, windowHeight * 0.51)
+  text ("although the biggest storm called the Great Dark Spot disappeared.", windowWidth * 0.7, windowHeight*0.55)
+
+  text( "Neptune is often called the 'Blue Planet'", windowWidth * 0.7, windowHeight * 0.62)  
+  text( "because it has a stunning blue color.", windowWidth * 0.7, windowHeight * 0.66)
+  text ("Like Uranus, Neptune has methane gas in the atmosphere ", windowWidth * 0.7, windowHeight*0.70)
+  text ("that absorbs red light and reflects blue light.", windowWidth * 0.7, windowHeight * 0.74)
+
+
   //Rocket Cursor
   image(img, mouseX - 30, mouseY - 30);
   img.resize(100, 0);
