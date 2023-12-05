@@ -59,6 +59,8 @@ function draw() {
   textSize(20)
   text("Press keys 0 to 9 to change color palette.", windowWidth * 0.82, windowHeight * 0.15);
   text("Click on the color you want and start drawing!", windowWidth * 0.805, windowHeight * 0.18)
+  text("Press 'ENTER' to save your creation!", windowWidth * 0.835, windowHeight * 0.21)
+
 
   //Stars
   for (let n = 0; n < particles.length; n++) {
