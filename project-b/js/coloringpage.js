@@ -72,7 +72,7 @@ function draw() {
   let distance = dist(planetX, planetY, mouseX, mouseY);
   let pdistance = dist(planetX, planetY, pmouseX, pmouseY);
 
-  if (mouseIsPressed && distance < 290 && pdistance < 290) {
+  if (mouseIsPressed && distance < 283 && pdistance < 283) {
     g.stroke(brushColor)
     g.strokeWeight(40);
     g.line(pmouseX, pmouseY, mouseX, mouseY);

@@ -8,7 +8,7 @@ let img6;
 let img7;
 let img8;
 let img9;
-let img10; 
+let img10;
 let font;
 function preload() {
   font = loadFont("fonts/ComicNeue-Bold.ttf");
@@ -22,7 +22,7 @@ function preload() {
   img7 = loadImage("images/saturn.PNG");
   img8 = loadImage("images/uranus.PNG");
   img9 = loadImage("images/neptune.PNG");
-  img10 = loadImage ("images/moon.PNG");
+  img10 = loadImage("images/moon.PNG");
 }
 
 let NUM_OF_PARTICLES = 300
@@ -38,13 +38,13 @@ function setup() {
   img7.resize(270, 0);
   img8.resize(200, 0);
   img9.resize(200, 0);
-  img10.resize (300, 0);
+  img10.resize(300, 0);
   img.resize(100, 0);
   noCursor();
   createCanvas(windowWidth, windowHeight);
 
   for (let i = 0; i < NUM_OF_PARTICLES; i++) {
-    particles.push( new Particle(random(width), random(height)) ); 
+    particles.push(new Particle(random(width), random(height)));
   }
 }
 
@@ -60,7 +60,7 @@ function draw() {
   text("SYSTEM", windowWidth / 2, windowHeight * 0.65);
 
 
-//Stars
+  //Stars
   for (let i = 0; i < particles.length; i++) {
     let p = particles[i];
     p.display();
@@ -68,7 +68,6 @@ function draw() {
 
   //Sun
   image(img1, 5, windowHeight * 0.01);
-
 
 
   //Mercury
@@ -89,7 +88,7 @@ function draw() {
 
   //Jupiter
   image(img6, 950, windowHeight * 0.6);
- 
+
 
   //Saturn
   image(img7, 1150, windowHeight * 0.03);
@@ -101,18 +100,18 @@ function draw() {
 
   //Neptune
   image(img9, 1200, windowHeight * 0.53);
-  
+
 
   //Rocket Cursor
   image(img, mouseX - 30, mouseY - 30);
-  
+
 }
 
 class Particle {
   constructor(x, y) {
     this.x = x;
     this.y = y;
-    this.dia = random (1, 7);
+    this.dia = random(1, 7);
   }
   display() {
     push();
